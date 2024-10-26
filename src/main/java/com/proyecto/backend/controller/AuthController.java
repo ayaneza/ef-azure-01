@@ -28,7 +28,7 @@ public class AuthController {
             System.out.println("Respuesta backend: " + Arrays.toString(datosUsuario));
 
             if (datosUsuario == null) {
-                return new LoginResponseDTO("01", "Error: Problemas en la autenticación"+e.getMessage(), "", "");
+                return new LoginResponseDTO("01", "Error: Problemas en la autenticación", "", "");
             } else {
                 return new LoginResponseDTO("00", "", datosUsuario[0], datosUsuario[1]);
             }
