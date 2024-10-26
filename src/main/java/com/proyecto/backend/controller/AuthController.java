@@ -28,13 +28,13 @@ public class AuthController {
             System.out.println("Respuesta backend: " + Arrays.toString(datosUsuario));
 
             if (datosUsuario == null) {
-                return new LoginResponseDTO("01", "Error: Problemas en la autenticación", "", "");
+                return new LoginResponseDTO("01", "Error: Problemas en la autenticación"+e.getMessage(), "", "");
             } else {
                 return new LoginResponseDTO("00", "", datosUsuario[0], datosUsuario[1]);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            return new LoginResponseDTO("99", "Error: Ocurrió un problema", "", "");
+            return new LoginResponseDTO("99", "Error: Ocurrió un problema"+e.getMessage(), "", "");
         }
     }
 
