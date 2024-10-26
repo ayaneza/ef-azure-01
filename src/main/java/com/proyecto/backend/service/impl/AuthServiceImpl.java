@@ -28,7 +28,7 @@ public class AuthServiceImpl  implements AutentificacionService {
         String[] datosUsuario =null;
         Resource resource = resourceLoader.getResource("classpath:integrantes.txt");
 
-        try(BufferedReader br = new BufferedReader(new FileReader(resource.getInputStream()))) {
+        try(BufferedReader br = new BufferedReader(new InputStreamReader(resource.getInputStream()))) {
             //Implement
 
             String linea;
