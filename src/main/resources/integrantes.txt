@@ -1,0 +1,6 @@
+1234;1234;Luis;Teran Rodriguez
+5678;5678;Arturo;Yañez Ayala
+9101;9101;Fabrizzio;Cisneros Ochoa
+2222;2222;Carlos;Yaringaño Castañeda
+5855;5855;Juan;Cabrera Cortez
+1752;1752;Sebastián;Anselmo Talledo
